@@ -1,0 +1,244 @@
+:root {
+  --log-button-bg-color: #4cb5f9;
+  --log-facebook-text-color: #385185;
+  --sign-up-text-color: #0296f6;
+  --forgot-pass-text-color: #00376b;
+  --footer-list-text-color: #7b7b7b;
+  --input-bg-color: #fafafa;
+  --or-text-color: #7c7c7c;
+}
+* {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+img {
+  width: 100px;
+}
+#log-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(128, 128, 128, 0.315);
+  padding: 30px;
+  /* padding-inline: 70px; */
+  padding-bottom: 18px;
+}
+#logo {
+  height: 88px;
+  width: 174px;
+  margin-bottom: 20px;
+}
+.form-con {
+  margin-top: 10px;
+  width: 23%;
+}
+input {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  width: 92%;
+}
+#username {
+  margin-bottom: 3px;
+  font-size: 0.75rem;
+  border: 0.1px solid rgba(128, 128, 128, 0.25);
+  background-color: var(--input-bg-color);
+  border-radius: 2px;
+  padding: 9px;
+  outline: none;
+}
+#pass {
+  margin-top: 3px;
+  border: 0.1px solid rgba(128, 128, 128, 0.25);
+  font-size: 0.75rem;
+  padding: 9px;
+  background-color: var(--input-bg-color);
+  border-radius: 2px;
+  margin-bottom: 15px;
+  width: 100%;
+  outline: none;
+}
+#pass:focus,
+#username:focus {
+  border: 0.1px solid rgba(128, 128, 128, 0.7);
+}
+#sub-form {
+  padding-block: 7px;
+  font-weight: 500;
+  background-color: var(--log-button-bg-color);
+  color: white;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+}
+.hrs {
+  display: inline !important;
+  height: 1px !important;
+  border: 0 !important;
+  border-top: 1px solid rgba(128, 128, 128, 0.5) !important; /* Change color as desired */
+  margin: 1em 0 !important;
+  padding: 0 !important;
+  /* width: 100%; */
+}
+sup {
+  color: rgba(128, 128, 128, 0.3);
+}
+#hr-text {
+  color: var(--or-text-color);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 600;
+  font-size: 13px;
+  margin-top: 13px;
+}
+#f-icon {
+  width: 16px;
+}
+#log-facebook-text {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: var(--log-facebook-text-color);
+  margin-left: 8px;
+  font-size: 14px;
+  font-weight: 600;
+}
+#log-facebook-text-a,
+#log-facebook-text-a:hover,
+#log-facebook-text-a:focus,
+#log-facebook-text-a:active,
+#log-facebook-text-a:visited {
+  text-decoration: none !important;
+}
+a:active {
+  opacity: 0.7 !important;
+}
+#log-facebook-text:active {
+  opacity: 0.7 !important;
+}
+#log-facebook {
+  cursor: pointer;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin-top: 25px;
+}
+#forgot-pass {
+  text-decoration: none;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: var(--forgot-pass-text-color);
+  /* font-weight: 100; */
+  font-size: 12px;
+  margin-top: 22px;
+}
+#register {
+  margin-top: 11px;
+  border: 1px solid rgba(128, 128, 128, 0.315);
+  text-align: center;
+  padding: 22px;
+  font-size: 14px;
+}
+#register-link {
+  text-decoration: none;
+  color: var(--sign-up-text-color);
+  font-weight: 600;
+}
+#down-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  margin-top: 20px;
+}
+#down-link-1 {
+  width: 135px;
+  overflow: hidden;
+}
+#d-link-container {
+  display: flex;
+  justify-content: center;
+  height: 70px;
+  align-items: center;
+  text-align: center;
+  margin-left: 17px;
+}
+#down-link-2 {
+  /* height: 68px; */
+  width: 155px;
+  overflow: hidden;
+}
+#d-link-con {
+  overflow: hidden;
+}
+#d-link-con-1 {
+  width: 120px;
+}
+.links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 65px;
+  font-size: 12px;
+  color: var(--footer-list-text-color);
+}
+.link-list {
+  display: flex;
+  list-style: none;
+  font-size: 12px;
+}
+.lists {
+  text-decoration: none;
+}
+.link {
+  color: var(--footer-list-text-color);
+  text-decoration: none;
+  margin-inline: 8px;
+}
+#lang {
+  font-size: 12px;
+  color: var(--footer-list-text-color);
+  background-color: none;
+  border: none;
+}
+#lang:focus {
+  outline: none;
+}
+.bottom-footer {
+  margin-top: 17px;
+  padding-bottom: 70px;
+}
+.under:hover {
+  text-decoration: underline;
+}
+.toggle-password {
+  position: absolute;
+  top: 37%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #333; /* Text color */
+}
+
+.toggle-password:hover {
+  opacity: 0.5; /* Underline on hover */
+}
+.pass-container {
+  position: relative;
+  width: 92%;
+}
+#copyright {
+  margin-left: 5px;
+}
